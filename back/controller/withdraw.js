@@ -4,7 +4,7 @@ const catchAsyncErrors = require("../middleware/catchAsyncErrors");
 const express = require("express");
 const { isSeller, isAuthenticated, isAdmin } = require("../middleware/auth");
 const Withdraw = require("../model/withdraw");
-const sendMail = require("../utils/sendMail");
+const sendMail = require("../utils/mailSender");
 const router = express.Router();
 
 // create withdraw request --- only for seller
